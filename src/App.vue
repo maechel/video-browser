@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <SearchBar @termChange="onTermChange"></SearchBar>
-        <VideoList :videos="videos"></VideoList>
+        <VideoList :videos="videos" @videoSelect="onVideoSelect"></VideoList>
     </div>
 </template>
 
@@ -32,6 +32,9 @@
                 }).then(response => {
                     this.videos = response.data.items;
                 });
+            },
+            onVideoSelect(video) {
+                console.log(video.snippet.title);
             }
         }
     }
