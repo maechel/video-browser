@@ -23,7 +23,7 @@
         data() {
             return {
                 videos: [],
-                selectedVideo: {}
+                selectedVideo: null
             };
         },
         methods: {

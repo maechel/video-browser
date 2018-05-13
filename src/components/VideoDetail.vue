@@ -1,6 +1,6 @@
 <template>
-    <div>
-        {{ video.snippet && video.snippet.title }}
+    <div v-if="video">
+        {{ video.snippet.title }}
     </div>
 </template>
 
