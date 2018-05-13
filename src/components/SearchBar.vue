@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input @input="onInput"/>
+        <input @input="onInput" name="search" id="search"/>
     </div>
 </template>
 
